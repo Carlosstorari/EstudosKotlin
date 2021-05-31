@@ -1,3 +1,4 @@
+/*** Usando o vararg é possivel adicionar varios parametros*/
 fun media( vararg notas: Float) {
     if (notas.isNotEmpty()) {
         var soma = 0f
@@ -9,6 +10,7 @@ fun media( vararg notas: Float) {
 
 }
 
+/*** Usando 0 <T> é possivel fazer com que a função aceite qualquer tipo de valor */
 fun <T> recebeQualquerTipoDeParametro(vararg  valores: T) {
     for (valor in valores) {
         println(valor)
